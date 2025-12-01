@@ -1,0 +1,569 @@
+{
+  "id": "e0085177-af9c-4515-abac-5f4ee7f750f1",
+  "appName": "lungSightAI",
+  "userId": "user",
+  "state": {
+    "logged_in": true,
+    "uuid": "6749142c-1d1b-4bb5-a280-53635b9db668",
+    "auth_results": "Login successful.",
+    "cxr_output": "Analysis of img8.jpg:\n\n*   **Atelectasis**: Normal\n*   **Cardiomegaly**: Normal\n*   **Consolidation**: Normal\n*   **Edema**: Normal\n*   **Enlarged Cardiomediastinum**: Normal\n*   **Fracture**: Normal\n*   **Lung Lesion**: Normal\n*   **Lung Opacity**: Normal\n*   **Pleural Effusion**: Normal\n*   **Pleural Other**: Normal\n*   **Pneumonia**: Normal\n*   **Pneumothorax**: Normal\n*   **Support Devices**: High Probability (0.75)\n\n**High Probability**: Support Devices",
+    "pdf_confirmation": "Your PDF report \"Report_img8jpg.pdf\" has been successfully created."
+  },
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "login using eshaan122\npass- aananya2606\n\nand analyse image 8 "
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-c5aae4e1-0245-4e05-8227-d5536519bcc0",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "2d86de6e-29a2-4a9b-9df3-c63b14bb7608",
+      "timestamp": 1764595154.043559
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-eae5ebd4-acc0-4999-a7dc-3dfae36025da",
+              "args": {
+                "request": "login using eshaan122 pass- aananya2606"
+              },
+              "name": "auth_agent"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 29,
+        "promptTokenCount": 438,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 438
+          }
+        ],
+        "totalTokenCount": 467
+      },
+      "invocationId": "e-c5aae4e1-0245-4e05-8227-d5536519bcc0",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "263da4f0-fc77-4512-9dcc-7ab836aded07",
+      "timestamp": 1764595154.045116
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-eae5ebd4-acc0-4999-a7dc-3dfae36025da",
+              "name": "auth_agent",
+              "response": {
+                "result": "Login successful."
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-c5aae4e1-0245-4e05-8227-d5536519bcc0",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {
+          "logged_in": true,
+          "uuid": "6749142c-1d1b-4bb5-a280-53635b9db668",
+          "auth_results": "Login successful."
+        },
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "6755bbc4-7fc1-4f40-8d12-39cb66dc19e9",
+      "timestamp": 1764595158.28615
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-f748e3b9-5865-4db0-b443-21e5799a8068",
+              "args": {
+                "request": "analyse image 8"
+              },
+              "name": "cxr_agent"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 19,
+        "promptTokenCount": 484,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 484
+          }
+        ],
+        "totalTokenCount": 503
+      },
+      "invocationId": "e-c5aae4e1-0245-4e05-8227-d5536519bcc0",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "e70cd33a-018b-4ec3-9adc-ed3f4fd95f35",
+      "timestamp": 1764595158.290666
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-f748e3b9-5865-4db0-b443-21e5799a8068",
+              "name": "cxr_agent",
+              "response": {
+                "result": "Analysis of img8.jpg:\n\n*   **Atelectasis**: Normal\n*   **Cardiomegaly**: Normal\n*   **Consolidation**: Normal\n*   **Edema**: Normal\n*   **Enlarged Cardiomediastinum**: Normal\n*   **Fracture**: Normal\n*   **Lung Lesion**: Normal\n*   **Lung Opacity**: Normal\n*   **Pleural Effusion**: Normal\n*   **Pleural Other**: Normal\n*   **Pneumonia**: Normal\n*   **Pneumothorax**: Normal\n*   **Support Devices**: High Probability (0.75)\n\n**High Probability**: Support Devices"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-c5aae4e1-0245-4e05-8227-d5536519bcc0",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {
+          "cxr_output": "Analysis of img8.jpg:\n\n*   **Atelectasis**: Normal\n*   **Cardiomegaly**: Normal\n*   **Consolidation**: Normal\n*   **Edema**: Normal\n*   **Enlarged Cardiomediastinum**: Normal\n*   **Fracture**: Normal\n*   **Lung Lesion**: Normal\n*   **Lung Opacity**: Normal\n*   **Pleural Effusion**: Normal\n*   **Pleural Other**: Normal\n*   **Pneumonia**: Normal\n*   **Pneumothorax**: Normal\n*   **Support Devices**: High Probability (0.75)\n\n**High Probability**: Support Devices"
+        },
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "8633af3e-b47a-4148-becf-c4263beb6abb",
+      "timestamp": 1764595170.239172
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "text": "The user is logged in and the image analysis is complete. The analysis indicates a high probability of support devices being present."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 24,
+        "promptTokenCount": 678,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 678
+          }
+        ],
+        "totalTokenCount": 702
+      },
+      "invocationId": "e-c5aae4e1-0245-4e05-8227-d5536519bcc0",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "233903e4-15a3-437a-8428-c45839268e2b",
+      "timestamp": 1764595170.242016
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "geenerte a pdf "
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1b8e2146-4ac5-461e-8d9a-c43885335816",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "fd47c63d-1c99-4603-befb-d2b4aa566ca8",
+      "timestamp": 1764595186.969096
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-06a07abf-21f9-495b-b0b7-69e0ac6dde27",
+              "args": {
+                "request": "generate a pdf"
+              },
+              "name": "pdf_report_agent"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 19,
+        "promptTokenCount": 710,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 710
+          }
+        ],
+        "totalTokenCount": 729
+      },
+      "invocationId": "e-1b8e2146-4ac5-461e-8d9a-c43885335816",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "562927b8-5b09-4647-b919-7f224121b4d3",
+      "timestamp": 1764595186.972679
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-06a07abf-21f9-495b-b0b7-69e0ac6dde27",
+              "name": "pdf_report_agent",
+              "response": {
+                "result": "I can help you with that. What is the patient's name, age, and gender?"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1b8e2146-4ac5-461e-8d9a-c43885335816",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {
+          "pdf_confirmation": "I can help you with that. What is the patient's name, age, and gender?"
+        },
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "1481f723-f9a1-4825-9ad3-efc8dcab8549",
+      "timestamp": 1764595189.933042
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "text": "I can help you with that. What is the patient's name, age, and gender?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 20,
+        "promptTokenCount": 765,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 765
+          }
+        ],
+        "totalTokenCount": 785
+      },
+      "invocationId": "e-1b8e2146-4ac5-461e-8d9a-c43885335816",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "da45d486-db49-4ca2-aaa7-e79cb8abef69",
+      "timestamp": 1764595189.933042
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "name - test_1\nage- 21\ngender M"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-cf94450f-b567-4106-bb57-3833ede1cf96",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "d132040a-988f-4fb9-9b8b-978831e054cf",
+      "timestamp": 1764595208.806904
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-1a5edb3f-718a-4e3a-9d6f-db9c8b3b218f",
+              "args": {
+                "request": "name - test_1 age- 21 gender M"
+              },
+              "name": "pdf_report_agent"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 28,
+        "promptTokenCount": 801,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 801
+          }
+        ],
+        "totalTokenCount": 829
+      },
+      "invocationId": "e-cf94450f-b567-4106-bb57-3833ede1cf96",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "7258314c-6568-4fca-9ad5-0cfa8809ee00",
+      "timestamp": 1764595208.808906
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-1a5edb3f-718a-4e3a-9d6f-db9c8b3b218f",
+              "name": "pdf_report_agent",
+              "response": {
+                "result": ""
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-cf94450f-b567-4106-bb57-3833ede1cf96",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "8d6d8cd4-7bba-44bb-b515-e13452a12a1c",
+      "timestamp": 1764595213.379764
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-29727e0d-2890-437a-ba4e-acf6578b69e3",
+              "args": {
+                "request": "generate pdf report for test_1 age 21 gender M"
+              },
+              "name": "pdf_report_agent"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 29,
+        "promptTokenCount": 845,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 845
+          }
+        ],
+        "totalTokenCount": 874
+      },
+      "invocationId": "e-cf94450f-b567-4106-bb57-3833ede1cf96",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "68d73e8d-fef6-4990-a93b-056127405bc6",
+      "timestamp": 1764595213.384308
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-29727e0d-2890-437a-ba4e-acf6578b69e3",
+              "name": "pdf_report_agent",
+              "response": {
+                "result": "Your PDF report \"Report_img8jpg.pdf\" has been successfully created."
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-cf94450f-b567-4106-bb57-3833ede1cf96",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {
+          "pdf_confirmation": "Your PDF report \"Report_img8jpg.pdf\" has been successfully created."
+        },
+        "artifactDelta": {
+          "Report_img8jpg.pdf": 0
+        },
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "b01563f2-82a0-4977-ba90-e7b78235f0ce",
+      "timestamp": 1764595219.727634
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "text": "Your PDF report \"Report_img8jpg.pdf\" has been successfully created."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 17,
+        "promptTokenCount": 907,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 907
+          }
+        ],
+        "totalTokenCount": 924
+      },
+      "invocationId": "e-cf94450f-b567-4106-bb57-3833ede1cf96",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e0ad8673-419e-4040-9ccc-77d08284c24f",
+      "timestamp": 1764595219.732226
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "thankyou"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-e1b5079b-b151-4b0c-bad5-eb58ea743756",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "1a3682c3-9dc7-4370-bc83-d2c1d54fd846",
+      "timestamp": 1764595319.953987
+    },
+    {
+      "modelVersion": "gemini-2.5-flash-lite",
+      "content": {
+        "parts": [
+          {
+            "text": "You're welcome! If you need anything else, feel free to ask."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 16,
+        "promptTokenCount": 928,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 928
+          }
+        ],
+        "totalTokenCount": 944
+      },
+      "invocationId": "e-e1b5079b-b151-4b0c-bad5-eb58ea743756",
+      "author": "orchestrator",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "385fbcc3-43a8-45f7-8c03-dd364892df1a",
+      "timestamp": 1764595319.956347
+    }
+  ],
+  "lastUpdateTime": 1764595319.956347
+}
