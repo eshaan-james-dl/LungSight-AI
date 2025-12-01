@@ -1,0 +1,31 @@
+.git
+.gitignore
+Dockerfile
+README.md
+
+# Ignore virtual environments
+agent_env/
+venv/
+env/
+
+# Ignore Python cache
+__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore Database files
+*.db
+*.sqlite
+lungSightAI/manual_session.db
+lungSightAI/ADS_DB/
+
+# Allow essential project files to be deployed
+!./*               # <-- this makes the root folder visible again
+!Dockerfile
+!requirements.txt
+!lungSightAI/**

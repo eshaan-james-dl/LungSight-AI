@@ -1,0 +1,37 @@
+# --- Security (NEVER UPLOAD) ---
+.env
+.env.local
+
+# --- Python Junk ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environments (Huge) ---
+agent_env/
+venv/
+env/
+.venv/
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Local Databases & Sessions ---
+*.db
+*.sqlite
+*.sqlite3
+lungSightAI/ADS_DB/
+lungSightAI/manual_session.db
+
+# --- User Data & Logs ---
+lungSightAI/Data/CSV files/
+lungSightAI/Data/Reports/
+*.log
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
+
+*.h5
