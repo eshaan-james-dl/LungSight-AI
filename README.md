@@ -76,7 +76,7 @@ Constrained by hardware limitations to minimal training epochs, our immediate fo
 ### 1\. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/lungSightAI.git
+git clone https://github.com/eshaan-james-dl/LungSight-AI.git
 cd lungSightAI
 ```
 
