@@ -170,3 +170,16 @@ This will automatically launch the application in your default web browser (typi
 
 ## Production Link 
 Click here to try out our solution [Cloud Run](https://tinyurl.com/lungsightai)
+
+---
+
+## ⚠️ MEDICAL DISCLAIMER
+
+**LungSight AI is a prototype designed for educational and research purposes only.** * **Not a Medical Device:** This software is **not** a certified medical device and has not been cleared or approved by the FDA, EMA, or any other regulatory body.
+* **No Medical Advice:** The information and analysis provided by this system do not constitute medical advice, diagnosis, or treatment. It is not intended to replace the clinical judgment of a qualified healthcare professional.
+* **Accuracy:** While this model utilizes Deep Learning techniques, it may produce false positives or false negatives.
+* **Usage:** Do not use this tool for actual patient diagnosis or treatment decisions. Always consult a certified radiologist or medical professional for the interpretation of medical imaging.
+
+**The authors and contributors assume no liability for any health consequences or damages arising from the use or misuse of this software.**
+
+
